@@ -1,0 +1,120 @@
+html {
+  font-family: "Roboto", sans-serif;
+}
+* {
+  color: black;
+}
+h1 {
+  color: blue;
+  margin-bottom: 0.25em;
+}
+h2 {
+  color: black;
+  font-size: 1em;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+a {
+  color: blue;
+}
+img {
+  width: 300px;
+  height: 350px;
+  display: flex;
+}
+.educations,
+li {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.description {
+  font-style: italic;
+  margin-top: 25px;
+}
+.contacts {
+  display: flex;
+}
+.h4 {
+  margin: 10px;
+}
+h3 {
+  color: blue;
+  font-weight: 700;
+  font-size: medium;
+}
+h4 {
+  color: blue;
+  font-weight: 700;
+  font-size: medium;
+}
+h5 {
+  color: blue;
+  font-weight: 700;
+  font-size: medium;
+}
+h6 {
+  color: blue;
+  font-weight: 700;
+  font-size: medium;
+}
+.skills {
+  width: 100%;
+  max-width: 600px;
+  padding: 0 20px;
+}
+
+.skill-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: black;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.skill-bar {
+  height: 14px;
+  background: #202020;
+  border-radius: 3px;
+}
+
+.skill-per {
+  height: 14px;
+  background: tomato;
+  border-radius: 3px;
+  position: relative;
+  animation: fillBars 2.5s 1;
+}
+
+.skill-per::before {
+  content: attr(per);
+  position: absolute;
+  padding: 4px 6px;
+  background: #f1f1f1;
+  border-radius: 4px;
+  font-size: 12px;
+  top: -35px;
+  right: 0;
+  transform: translateX(50%);
+}
+
+.skill-per::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  background: #f1f1f1;
+  top: -18px;
+  right: 0;
+  transform: translateX(50%) rotate(45deg);
+  border-radius: 1px;
+}
+
+@keyframes fillBars {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
